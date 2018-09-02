@@ -16,4 +16,4 @@ non-speech human sounds, such as laughter.
 |                   | General               | Voice                 | Speech                |
 | ----------------- | --------------------- | --------------------- | --------------------- |
 | General           | marathon-prescription | leavened-quisling     | orig                  |
-| Recording         | conjoined-burgers     | beguiling-drafter     |                       |
+| Recording         | conjoined-burgers     | beguiling-drafter     | somnolent-hogwash     |

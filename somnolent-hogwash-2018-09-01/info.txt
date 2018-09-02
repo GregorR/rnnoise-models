@@ -1,0 +1,40 @@
+SUITE: somnolent-hogwash-2018-09-01
+
+INTENT:
+
+Speech in a reasonable recording environment. Fans, AC, computers, etc. Note
+that "speech" means speech, not other human sounds; laughter, coughing, etc are
+not included.
+
+
+SIGNAL:
+
+voice
+    hamlet-002-act-1-scene-1.1626
+        http://etc.usf.edu/lit2go/94/hamlet/1626/
+    human_rights_un_chi_nf.mp3
+        https://librivox.org/universal-declaration-of-human-rights-by-united-nations-volume-02/
+    human_rights_un_cze_msed.mp3
+        https://librivox.org/universal-declaration-of-human-rights-by-united-nations-volume-02/
+    huntingofthesnark_01_carrol_128kb
+        https://librivox.org/the-hunting-of-the-snark-by-lewis-carroll-3/
+    teacupclub_01_armstrong_128kb
+        https://librivox.org/the-teacup-club-by-eliza-armstrong/
+    warletters_01_allan_128kb.mp3
+        https://librivox.org/war-letters-from-a-young-queenslander-by-robert-marshall-allen/
+    TSPspeech
+        http://www-mmsp.ece.mcgill.ca/Documents/Data/
+
+
+./chopper voice/hamlet-002-act-1-scene-1.1626.raw voice/human_rights_un_chi_nf.raw voice/human_rights_un_cze_msed.raw voice/huntingofthesnark_01_carrol_128kb.raw voice/teacupclub_01_armstrong_128kb.raw voice/warletters_01_allan_128kb.raw voice/TSPspeech.raw
+
+
+NOISE:
+
+rnnoise_contributions (only "other" and "none" samples)
+    https://people.xiph.org/~jm/demo/rnnoise/rnnoise_contributions.tar.gz
+
+
+COUNT: 13212874 (x87)
+
+NOTE: All files processed into correct raws through ffmpeg: ffmpeg -i in -f s16le -ac 1 -ar 48000 out.raw
